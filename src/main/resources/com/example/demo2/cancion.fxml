@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="526.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controladores.Cancion">
+   <children>
+      <Pane prefHeight="118.0" prefWidth="526.0">
+         <children>
+            <Label fx:id="nombreLabel" layoutX="99.0" layoutY="6.0" prefHeight="53.0" prefWidth="309.0" text="Nombre" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imagen" fitHeight="78.0" fitWidth="111.0" layoutX="8.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cancion.jpg" />
+               </image></ImageView>
+            <Label fx:id="duracionLabel" layoutX="99.0" layoutY="46.0" prefHeight="53.0" prefWidth="112.0" text="Duracion" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button layoutX="265.0" layoutY="72.0" mnemonicParsing="false" onAction="#reproducirCancion" styleClass="boton" stylesheets="@styleReproductor.css" text="Play ▶" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="337.0" layoutY="72.0" mnemonicParsing="false" onAction="#favoritos" styleClass="boton" stylesheets="@styleReproductor.css" text="Fav ♥" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="400.0" layoutY="72.0" mnemonicParsing="false" onAction="#quitarfavs" styleClass="boton" stylesheets="@styleReproductor.css" text="Quitar de Favorito" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</HBox>

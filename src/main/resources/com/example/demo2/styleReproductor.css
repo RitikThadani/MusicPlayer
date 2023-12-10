@@ -1,0 +1,64 @@
+.fondo{
+
+    -fx-background-image:url('Reproductor.png');
+
+}
+
+.boton{
+
+    -fx-background-color:#9d4edd;
+   
+  }
+
+
+.corazon{
+
+    -fx-background-image: url('corazon.png');
+    -fx-background-size: cover; /* o ajusta según lo necesites */
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* para eliminar cualquier color de fondo */
+}
+
+.playlist{
+    -fx-background-image: url('menu.png');
+    -fx-background-size: cover; /* o ajusta según lo necesites */
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* para eliminar cualquier color de fondo */
+}
+
+
+/* styles.css */
+.boton-imagen {
+    -fx-background-size: cover; /* o ajusta según lo necesites */
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* para eliminar cualquier color de fondo */
+}
+
+.boton-imagen.pausa {
+    -fx-background-image: url('pausa.png'); /* imagen de pausa */
+}
+
+.boton-imagen.tocar {
+    -fx-background-image: url('tocar.png'); /* imagen de reproducción */
+}
+
+.siguienteDerch{
+    
+
+    -fx-background-image: url('derecha.png');
+    -fx-background-size: cover; /* o ajusta según lo necesites */
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* para eliminar cualquier color de fondo */
+}
+
+.siguienteIzq{
+    
+    -fx-background-image: url('atras.png');
+    -fx-background-size: cover; /* o ajusta según lo necesites */
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* para eliminar cualquier color de fondo */
+}
+
+.transparente{
+    -fx-background-color: transparent; /* para eliminar cualquier color de fondo */
+}

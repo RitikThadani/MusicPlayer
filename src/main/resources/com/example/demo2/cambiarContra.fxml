@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="324.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controladores.CambiarContra">
+   <children>
+      <Label layoutX="41.0" layoutY="44.0" text="CAMBIO DE CONTRASEÑA">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="96.0" text="Usuario" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usuarioText" layoutX="50.0" layoutY="126.0" />
+      <Label layoutX="50.0" layoutY="172.0" text="Nueva Contraseña" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nuevaContra" layoutX="50.0" layoutY="200.0" />
+      <Button layoutX="128.0" layoutY="257.0" mnemonicParsing="false" onAction="#cambiarContra" text="Cambiar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

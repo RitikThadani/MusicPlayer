@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="766.0" prefWidth="1356.0" styleClass="fondo" stylesheets="@styleReproductor.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controladores.Reproductor">
+   <children>
+      <Button layoutX="1090.0" layoutY="30.0" mnemonicParsing="false" onAction="#cancionesFavoritas" prefHeight="34.0" prefWidth="35.0" styleClass="corazon" stylesheets="@styleReproductor.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="artistaCancionLabel1" contentDisplay="CENTER" layoutX="630.0" layoutY="567.0" text="Artista" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Slider fx:id="songSlider" layoutX="261.0" layoutY="657.0" onMousePressed="#sliderPressed" onMouseReleased="#sliderPressed" prefHeight="14.0" prefWidth="804.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Slider>
+      <Label fx:id="nombreCancionLabel1" alignment="CENTER" contentDisplay="CENTER" layoutX="593.0" layoutY="514.0" text="Nombre" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Button fx:id="boton" layoutX="650.0" layoutY="695.0" mnemonicParsing="false" onAction="#cancionEstado" prefHeight="34.0" prefWidth="35.0" stylesheets="@styleReproductor.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="989.0" layoutY="30.0" mnemonicParsing="false" onAction="#todasLasCanciones" prefHeight="34.0" prefWidth="35.0" styleClass="playlist" stylesheets="@styleReproductor.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="518.0" layoutX="837.0" layoutY="80.0" startX="-112.0" stroke="#f347ff" />
+      <Label fx:id="nombreCancionLabel" layoutX="32.0" layoutY="54.0" prefHeight="53.0" prefWidth="309.0" text="Nombre" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="737.0" layoutY="113.0" prefHeight="366.0" prefWidth="582.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="370.0" prefWidth="605.0" style="-fx-background-color: black;">
+               <content>
+                  <VBox fx:id="cancionesLayout" prefHeight="360.0" prefWidth="577.0" style="-fx-background-color: black;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Label fx:id="artistaCancionLabel2" contentDisplay="CENTER" layoutX="32.0" layoutY="107.0" text="Artista" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="duracionCancionLabel" contentDisplay="CENTER" layoutX="636.0" layoutY="607.0" prefHeight="34.0" prefWidth="54.0" text="00:00" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagenCancion" fitHeight="366.0" fitWidth="425.0" layoutX="32.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="pruebas" layoutX="207.0" layoutY="649.0" text="0:00" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="duracion3" layoutX="1090.0" layoutY="649.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

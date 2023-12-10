@@ -1,0 +1,36 @@
+
+/*
+:root {
+    --violeta: #7B2CBF;
+    --primario: #9D4EDD; 
+    --lila: #5A189A; 
+    --rosa: #C77DFF; 
+    --rosaFlojo: #E0AAFF;
+    --lilaOscuro:#3C096C;
+    --lilaSuperOscuro:#240046;
+    --blanco:#ffffff;
+    --negro:#000;
+}
+
+*/
+
+.fondo{
+
+    -fx-background-image:url('Registro.png');
+
+}
+
+.fondoTextFields{
+  -fx-background-color:#9d4edd;
+}
+
+.boton{
+  -fx-background-color: #45196B;
+
+}
+
+.botonRegistrarse{
+  -fx-background-color: transparent; 
+  -fx-border-color: transparent; 
+  -fx-background-insets: 0;
+}

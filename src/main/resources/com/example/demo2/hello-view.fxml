@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panel" prefHeight="766.0" prefWidth="1356.0" styleClass="fondo" stylesheets="@styleLogin.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controladores.HelloController">
+   <children>
+      <TextField fx:id="usuarioLogin" layoutX="580.0" layoutY="316.0" onAction="#onEnter" prefHeight="31.0" prefWidth="198.0" promptText="Usuario" styleClass="fondoTextFields" />
+      <TextField fx:id="contraLogin" layoutX="580.0" layoutY="383.0" onAction="#onEnter" prefHeight="31.0" prefWidth="198.0" promptText="Contraseña" styleClass="fondoTextFields" />
+      <Button fx:id="boton" layoutX="623.0" layoutY="448.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="38.0" prefWidth="107.0" styleClass="boton" stylesheets="@styleLogin.css" text="Enviar" textAlignment="CENTER" textFill="#9d4edd">
+         <font>
+            <Font name="Sitka Text Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="738.0" layoutY="486.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirRegistro" prefHeight="41.0" prefWidth="116.0" styleClass="botonRegistrarse" text="Registrarse" textFill="#9d4edd" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="fallo" layoutX="580.0" layoutY="421.0" textFill="#c31b1b">
+         <font>
+            <Font name="Sitka Small" size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="796.0" layoutY="378.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirCambioContra" prefHeight="41.0" prefWidth="170.0" styleClass="botonRegistrarse" text="Cambiar contraseña" textFill="#9d4edd">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
